@@ -56,7 +56,7 @@ main>h1{
     font-weight: lighter;
 }
 
-.men, .women, .jackets, .sneakers{
+.men, .women, .jackets, .sneakers, .hats{
     display: flex;
 }
 
@@ -460,4 +460,75 @@ main>h1{
 .sneaker4:hover>.s-4{
     display: block;
 }
+
+.hat1{
+    background-image:url('https://i.ibb.co/ypkgK0X/blue-beanie.png');
+    position: relative;
+}
+
+.hat2{
+    background-image:url('https://i.ibb.co/YTjW3vF/green-beanie.png');
+    position: relative;
+}
+
+.hat3{
+    background-image:url('https://i.ibb.co/bLB646Z/red-beanie.png');
+    position: relative;
+}
+
+.hat4{
+    background-image:url('https://i.ibb.co/1f2nWMM/wolf-cap.png');
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
