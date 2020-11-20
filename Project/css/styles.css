@@ -62,140 +62,402 @@ main>h1{
 
 .men1{
     background-image: url('https://i.ibb.co/mh3VM1f/polka-dot-shirt.png');
+    position: relative;
 }
+.m-1{
+    border: 1px solid black;
+    height: 30px;
+    width: 160px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65px;
+    right: -23px;
+    display: none;
+}
+.men1:hover{
+    opacity: 65%;
+}
+.men1:hover>.h-1{
+    display: block;
+}
+
 .men2{
     background-image: url('https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png');
+    position: relative;
 }
+.m-2{
+    border: 1px solid black;
+    height: 30px;
+    width: 160px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65px;
+    right: -23px;
+    display: none;
+}
+.men2:hover{
+    opacity: 65%;
+}
+.men2:hover>.m-2{
+    display: block;
+}
+
 .men3{
     background-image: url('https://i.ibb.co/RvwnBL8/pink-shirt.png');
+    position: relative;
 }
+.m-3{
+    border: 1px solid black;
+    height: 30px;
+    width: 160px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65px;
+    right: -23px;
+    display: none;
+}
+.men3:hover{
+    opacity: 65%;
+}
+.men3:hover>.m-3{
+    display: block;
+}
+
 .men4{
     background-image: url('https://i.ibb.co/55z32tw/long-sleeve.png');
+    position: relative;
+}
+.m-4{
+    border: 1px solid black;
+    height: 30px;
+    width: 160px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65px;
+    right: -23px;
+    display: none;
+}
+.men4:hover{
+    opacity: 65%;
+}
+.men4:hover>.m-4{
+    display: block;
 }
 
 .women1{
     background-image: url('https://i.ibb.co/qBcrsJg/white-vest.png');
+    position: relative;
 }
+.w-1{
+    border: 1px solid black;
+    height: 30px;
+    width: 160px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65px;
+    right: -23px;
+    display: none;
+}
+.women1:hover{
+    opacity: 65%;
+}
+.women1:hover>.w-1{
+    display: block;
+}
+
 .women2{
     background-image: url('https://i.ibb.co/4W2DGKm/floral-blouse.png');
+    position: relative;
 }
+.w-2{
+    border: 1px solid black;
+    height: 30px;
+    width: 160px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65px;
+    right: -23px;
+    display: none;
+}
+.women2:hover{
+    opacity: 65%;
+}
+.women2:hover>.w-2{
+    display: block;
+}
+
 .women3{
     background-image: url('https://i.ibb.co/KV18Ysr/floral-skirt.png');
+    position: relative;
 }
+.w-3{
+    border: 1px solid black;
+    height: 30px;
+    width: 160px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65px;
+    right: -23px;
+    display: none;
+}
+.women3:hover{
+    opacity: 65%;
+}
+.women3:hover>.w-3{
+    display: block;
+}
+
 .women4{
     background-image: url('https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png');
+    position: relative;
+}
+.w-4{
+    border: 1px solid black;
+    height: 30px;
+    width: 160px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65px;
+    right: -23px;
+    display: none;
+}
+.women4:hover{
+    opacity: 65%;
+}
+.women4:hover>.w-4{
+    display: block;
 }
 
 .jacket1{
     background-image: url('https://i.ibb.co/XzcwL5s/black-shearling.png');
+    position: relative;
 }
+.j-1{
+    border: 1px solid black;
+    height: 30px;
+    width: 160px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65px;
+    right: -23px;
+    display: none;
+}
+.jacket1:hover{
+    opacity: 65%;
+}
+.jacket1:hover>.j-1{
+    display: block;
+}
+
 .jacket2{
     background-image: url('https://i.ibb.co/N71k1ML/grey-jean-jacket.png');
+    position: relative;
 }
+.j-2{
+    border: 1px solid black;
+    height: 30px;
+    width: 160px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65px;
+    right: -23px;
+    display: none;
+}
+.jacket2:hover{
+    opacity: 65%;
+}
+.jacket2:hover>.j-2{
+    display: block;
+}
+
 .jacket3{
     background-image: url('https://i.ibb.co/mJS6vz0/blue-jean-jacket.png');
-} 
+    position: relative;
+}
+.j-3{
+    border: 1px solid black;
+    height: 30px;
+    width: 160px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65px;
+    right: -23px;
+    display: none;
+}
+.jacket3:hover{
+    opacity: 65%;
+}
+.jacket3:hover>.j-3{
+    display: block;
+}
+
 .jacket4{
     background-image: url('https://i.ibb.co/M6hHc3F/brown-trench.png');
+    position: relative;
 }
+.j-4{
+    border: 1px solid black;
+    height: 30px;
+    width: 160px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65px;
+    right: -23px;
+    display: none;
+}
+.jacket4:hover{
+    opacity: 65%;
+}
+.jacket4:hover>.j-4{
+    display: block;
+}
+
 
 .sneaker1{
     background-image: url('https://i.ibb.co/bPmVXyP/black-converse.png');
+    position: relative;
 }
+.s-1{
+    border: 1px solid black;
+    height: 30px;
+    width: 160px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65px;
+    right: -23px;
+    display: none;
+}
+.sneaker1:hover{
+    opacity: 65%;
+}
+.sneaker1:hover>.s-1{
+    display: block;
+}
+
 .sneaker2{
     background-image: url('https://i.ibb.co/0s3pdnc/adidas-nmd.png');
+    position: relative;
 }
+.s-2{
+    border: 1px solid black;
+    height: 30px;
+    width: 160px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65px;
+    right: -23px;
+    display: none;
+}
+.sneaker2:hover{
+    opacity: 65%;
+}
+.sneaker2:hover>.s-2{
+    display: block;
+}
+
 .sneaker3{
     background-image: url('https://i.ibb.co/fMTV342/nike-brown.png');
+    position: relative;
 }
+.s-3{
+    border: 1px solid black;
+    height: 30px;
+    width: 160px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65px;
+    right: -23px;
+    display: none;
+}
+.sneaker3:hover{
+    opacity: 65%;
+}
+.sneaker3:hover>.s-3{
+    display: block;
+}
+
 .sneaker4{
     background-image: url('https://i.ibb.co/1RcFPk0/white-nike-high-tops.png');
+    position: relative;
+}
+.s-4{
+    border: 1px solid black;
+    height: 30px;
+    width: 160px;
+    position: absolute;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    margin: 50px;
+    top: 65px;
+    right: -23px;
+    display: none;
+}
+.sneaker4:hover{
+    opacity: 65%;
+}
+.sneaker4:hover>.s-4{
+    display: block;
 }
 
-/*Large devices only*/
-@media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-    border: 1px solid black;
-  }
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
-}
-
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-    border: 1px solid black;
-  }
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
-}
