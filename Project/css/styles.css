@@ -81,7 +81,7 @@ main>h1{
 .men1:hover{
     opacity: 65%;
 }
-.men1:hover>.h-1{
+.men1:hover>.m-1{
     display: block;
 }
 
