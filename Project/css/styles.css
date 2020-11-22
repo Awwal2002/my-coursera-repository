@@ -1,534 +1,209 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
-@import 'config';
 
 body {
-    font-family: 'Open Sans Condensed', sans-serif;
-    padding: 20px 150px;
+    font-family: Open Sans Condensed;
 }
-li {
-    list-style-type: none;
+
+header {
+    margin: 65px;
 }
-a {
-    text-decoration: none;
+
+header a {
     color: #000;
 }
 
+.cart-icon {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    cursor: pointer;
+}
 
-nav {
-    margin: 50px 0;
+.cart-icon .item-count {
+    position: absolute;
+    font-size: 13px;
+    font-weight: 700;
+    bottom: 7px;
+    right: 19px;
+}
+
+section {
+    margin: 60px;
+}
+
+section div {
+    display: inline-block;
+}
+
+.items-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.items-list > div {
+    padding: 10px;
+}
+
+.items-list > div > p {
     display: flex;
     justify-content: space-between;
 }
 
-ul {
+.item {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    place-items: center;
+    margin: auto;
+}
+
+h2 {
+    margin: auto;
+    padding-left: 22px;
+    padding-bottom: 10px;
+}
+
+.add-to-cart-button {
+    position: relative;
+    bottom: 110px;
+    width: 80% !important; 
+    /* left: 90px; */
+    justify-content: center;
+    opacity: .5;
+    left: 10%;
+    right: 10%;
+    visibility: hidden;
+    height: 50px;
+    letter-spacing: .5px;
+    line-height: 50px;
+    padding: 0 35px;
+    font-size: 15px;
+    font-weight: bolder;
+    justify-content: center;
+}
+
+
+
+.item:hover .add-to-cart-button {
+    visibility: visible;
+    opacity: .95;
+}
+
+.item:hover img{
+    opacity: .8;
+}
+
+.add-to-cart-button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid #000;
+}
+
+
+/* CHECKOUT PAGE  */
+
+.checkout-page {
+    width: 55%;
+    min-height: 90vh;
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 50px auto 0;
 }
 
-li {
-    margin: 0 10px;
-}
-
-svg {
-    width: 20px;
-    height: auto;
-}
-
-.row {
-  margin: 10px;
-  display: flex;
-}
-.row>div{
-    border: 1px solid black;
-    height:320px;
-    width: 280px;
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-bottom: 30px;
-}
-
-main>h1{
-    font-weight: lighter;
-}
-
-.men, .women, .jackets, .sneakers, .hats{
+.checkout-header {
+    width: 100%;
+    padding: 10px 0;
     display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #a9a9a9;
 }
 
-.men1{
-    background-image: url('https://i.ibb.co/mh3VM1f/polka-dot-shirt.png');
-    position: relative;
+.checkout-header div {
+    width: 20%;
 }
-.m-1{
-    border: 1px solid black;
-    height: 30px;
-    width: 160px;
-    position: absolute;
-    padding: 2px;
-    background-color: #fff;
-    color: black;
+
+
+.total {
+    margin-top: 30px;
+    margin-left: auto;
+    font-size: 36px;
+}
+
+.test-warning {
+    justify-content: center;
     text-align: center;
-    margin: 50px;
-    top: 65px;
-    right: -23px;
+    margin-top: 40px;
+    font-size: 24px;
+    color: red;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pay-now-button {
+    background-image: linear-gradient(rgb(125, 197, 238), rgb(0, 140, 221) 85%, rgb(48, 162, 228));
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    position: relative;
+    padding: 0px 12px;
+    display: block;
+    border: 0;
+    height: 40px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px -1px 0px;
+    border-radius: 4px;
+}
+
+.checkout-item-image {
+    display: inline-block;
+}
+
+.checkout-item-image img {
+    width: 100%
+}
+
+.checkout-item {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.checkout-item div, .checkout-item span {
+    width: 20%
+}
+
+.output {
+    width: 100%
+}
+
+.in-cart {
     display: none;
 }
-.men1:hover{
-    opacity: 65%;
-}
-.men1:hover>.m-1{
-    display: block;
+
+.checkout-item, #total {
+    font-size: large;
+    font-weight: bold;
 }
 
-.men2{
-    background-image: url('https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png');
-    position: relative;
+.increase, .decrease, .remove-button {
+    cursor: pointer;
 }
-.m-2{
-    border: 1px solid black;
-    height: 30px;
-    width: 160px;
-    position: absolute;
-    padding: 2px;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    margin: 50px;
-    top: 65px;
-    right: -23px;
+
+.value {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.totalPrice {
     display: none;
 }
-.men2:hover{
-    opacity: 65%;
-}
-.men2:hover>.m-2{
-    display: block;
-}
-
-.men3{
-    background-image: url('https://i.ibb.co/RvwnBL8/pink-shirt.png');
-    position: relative;
-}
-.m-3{
-    border: 1px solid black;
-    height: 30px;
-    width: 160px;
-    position: absolute;
-    padding: 2px;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    margin: 50px;
-    top: 65px;
-    right: -23px;
-    display: none;
-}
-.men3:hover{
-    opacity: 65%;
-}
-.men3:hover>.m-3{
-    display: block;
-}
-
-.men4{
-    background-image: url('https://i.ibb.co/55z32tw/long-sleeve.png');
-    position: relative;
-}
-.m-4{
-    border: 1px solid black;
-    height: 30px;
-    width: 160px;
-    position: absolute;
-    padding: 2px;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    margin: 50px;
-    top: 65px;
-    right: -23px;
-    display: none;
-}
-.men4:hover{
-    opacity: 65%;
-}
-.men4:hover>.m-4{
-    display: block;
-}
-
-.women1{
-    background-image: url('https://i.ibb.co/qBcrsJg/white-vest.png');
-    position: relative;
-}
-.w-1{
-    border: 1px solid black;
-    height: 30px;
-    width: 160px;
-    position: absolute;
-    padding: 2px;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    margin: 50px;
-    top: 65px;
-    right: -23px;
-    display: none;
-}
-.women1:hover{
-    opacity: 65%;
-}
-.women1:hover>.w-1{
-    display: block;
-}
-
-.women2{
-    background-image: url('https://i.ibb.co/4W2DGKm/floral-blouse.png');
-    position: relative;
-}
-.w-2{
-    border: 1px solid black;
-    height: 30px;
-    width: 160px;
-    position: absolute;
-    padding: 2px;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    margin: 50px;
-    top: 65px;
-    right: -23px;
-    display: none;
-}
-.women2:hover{
-    opacity: 65%;
-}
-.women2:hover>.w-2{
-    display: block;
-}
-
-.women3{
-    background-image: url('https://i.ibb.co/KV18Ysr/floral-skirt.png');
-    position: relative;
-}
-.w-3{
-    border: 1px solid black;
-    height: 30px;
-    width: 160px;
-    position: absolute;
-    padding: 2px;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    margin: 50px;
-    top: 65px;
-    right: -23px;
-    display: none;
-}
-.women3:hover{
-    opacity: 65%;
-}
-.women3:hover>.w-3{
-    display: block;
-}
-
-.women4{
-    background-image: url('https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png');
-    position: relative;
-}
-.w-4{
-    border: 1px solid black;
-    height: 30px;
-    width: 160px;
-    position: absolute;
-    padding: 2px;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    margin: 50px;
-    top: 65px;
-    right: -23px;
-    display: none;
-}
-.women4:hover{
-    opacity: 65%;
-}
-.women4:hover>.w-4{
-    display: block;
-}
-
-.jacket1{
-    background-image: url('https://i.ibb.co/XzcwL5s/black-shearling.png');
-    position: relative;
-}
-.j-1{
-    border: 1px solid black;
-    height: 30px;
-    width: 160px;
-    position: absolute;
-    padding: 2px;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    margin: 50px;
-    top: 65px;
-    right: -23px;
-    display: none;
-}
-.jacket1:hover{
-    opacity: 65%;
-}
-.jacket1:hover>.j-1{
-    display: block;
-}
-
-.jacket2{
-    background-image: url('https://i.ibb.co/N71k1ML/grey-jean-jacket.png');
-    position: relative;
-}
-.j-2{
-    border: 1px solid black;
-    height: 30px;
-    width: 160px;
-    position: absolute;
-    padding: 2px;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    margin: 50px;
-    top: 65px;
-    right: -23px;
-    display: none;
-}
-.jacket2:hover{
-    opacity: 65%;
-}
-.jacket2:hover>.j-2{
-    display: block;
-}
-
-.jacket3{
-    background-image: url('https://i.ibb.co/mJS6vz0/blue-jean-jacket.png');
-    position: relative;
-}
-.j-3{
-    border: 1px solid black;
-    height: 30px;
-    width: 160px;
-    position: absolute;
-    padding: 2px;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    margin: 50px;
-    top: 65px;
-    right: -23px;
-    display: none;
-}
-.jacket3:hover{
-    opacity: 65%;
-}
-.jacket3:hover>.j-3{
-    display: block;
-}
-
-.jacket4{
-    background-image: url('https://i.ibb.co/M6hHc3F/brown-trench.png');
-    position: relative;
-}
-.j-4{
-    border: 1px solid black;
-    height: 30px;
-    width: 160px;
-    position: absolute;
-    padding: 2px;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    margin: 50px;
-    top: 65px;
-    right: -23px;
-    display: none;
-}
-.jacket4:hover{
-    opacity: 65%;
-}
-.jacket4:hover>.j-4{
-    display: block;
-}
-
-
-.sneaker1{
-    background-image: url('https://i.ibb.co/bPmVXyP/black-converse.png');
-    position: relative;
-}
-.s-1{
-    border: 1px solid black;
-    height: 30px;
-    width: 160px;
-    position: absolute;
-    padding: 2px;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    margin: 50px;
-    top: 65px;
-    right: -23px;
-    display: none;
-}
-.sneaker1:hover{
-    opacity: 65%;
-}
-.sneaker1:hover>.s-1{
-    display: block;
-}
-
-.sneaker2{
-    background-image: url('https://i.ibb.co/0s3pdnc/adidas-nmd.png');
-    position: relative;
-}
-.s-2{
-    border: 1px solid black;
-    height: 30px;
-    width: 160px;
-    position: absolute;
-    padding: 2px;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    margin: 50px;
-    top: 65px;
-    right: -23px;
-    display: none;
-}
-.sneaker2:hover{
-    opacity: 65%;
-}
-.sneaker2:hover>.s-2{
-    display: block;
-}
-
-.sneaker3{
-    background-image: url('https://i.ibb.co/fMTV342/nike-brown.png');
-    position: relative;
-}
-.s-3{
-    border: 1px solid black;
-    height: 30px;
-    width: 160px;
-    position: absolute;
-    padding: 2px;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    margin: 50px;
-    top: 65px;
-    right: -23px;
-    display: none;
-}
-.sneaker3:hover{
-    opacity: 65%;
-}
-.sneaker3:hover>.s-3{
-    display: block;
-}
-
-.sneaker4{
-    background-image: url('https://i.ibb.co/1RcFPk0/white-nike-high-tops.png');
-    position: relative;
-}
-.s-4{
-    border: 1px solid black;
-    height: 30px;
-    width: 160px;
-    position: absolute;
-    padding: 2px;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    margin: 50px;
-    top: 65px;
-    right: -23px;
-    display: none;
-}
-.sneaker4:hover{
-    opacity: 65%;
-}
-.sneaker4:hover>.s-4{
-    display: block;
-}
-
-.hat1{
-    background-image:url('https://i.ibb.co/ypkgK0X/blue-beanie.png');
-    position: relative;
-}
-
-.hat2{
-    background-image:url('https://i.ibb.co/YTjW3vF/green-beanie.png');
-    position: relative;
-}
-
-.hat3{
-    background-image:url('https://i.ibb.co/bLB646Z/red-beanie.png');
-    position: relative;
-}
-
-.hat4{
-    background-image:url('https://i.ibb.co/1f2nWMM/wolf-cap.png');
-    position: relative;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
